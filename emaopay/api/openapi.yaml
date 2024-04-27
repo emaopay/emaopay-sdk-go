@@ -754,6 +754,9 @@ components:
         notifyURL:
           description: 回调地址
           type: string
+        paymentMethod:
+          description: 支付方式
+          type: string
         productId:
           description: 产品 Id
           type: string
@@ -917,6 +920,7 @@ components:
         notifySuccessAt: 5
         notifyURL: notifyURL
         paidAt: 5
+        paymentMethod: paymentMethod
         id: id
         returnURL: returnURL
         notifyFailedCount: 1
@@ -961,6 +965,9 @@ components:
         paidAt:
           description: 更新时间戳
           type: integer
+        paymentMethod:
+          description: 支付方式
+          type: string
         productId:
           description: "产品 Id, 可为空"
           type: string
@@ -1028,6 +1035,7 @@ components:
           notifySuccessAt: 5
           notifyURL: notifyURL
           paidAt: 5
+          paymentMethod: paymentMethod
           id: id
           returnURL: returnURL
           notifyFailedCount: 1
@@ -1049,6 +1057,7 @@ components:
           notifySuccessAt: 5
           notifyURL: notifyURL
           paidAt: 5
+          paymentMethod: paymentMethod
           id: id
           returnURL: returnURL
           notifyFailedCount: 1

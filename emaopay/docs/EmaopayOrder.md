@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **NotifySuccessAt** | Pointer to **int32** | 通知成功时间 | [optional] 
 **NotifyURL** | Pointer to **string** | 回调地址 | [optional] 
 **PaidAt** | Pointer to **int32** | 更新时间戳 | [optional] 
+**PaymentMethod** | Pointer to **string** | 支付方式 | [optional] 
 **ProductId** | Pointer to **string** | 产品 Id, 可为空 | [optional] 
 **QrCode** | Pointer to **string** | 二维码 | [optional] 
 **RealAmount** | Pointer to **string** | 真实金额 | [optional] 
@@ -369,6 +370,31 @@ SetPaidAt sets PaidAt field to given value.
 `func (o *EmaopayOrder) HasPaidAt() bool`
 
 HasPaidAt returns a boolean if a field has been set.
+
+### GetPaymentMethod
+
+`func (o *EmaopayOrder) GetPaymentMethod() string`
+
+GetPaymentMethod returns the PaymentMethod field if non-nil, zero value otherwise.
+
+### GetPaymentMethodOk
+
+`func (o *EmaopayOrder) GetPaymentMethodOk() (*string, bool)`
+
+GetPaymentMethodOk returns a tuple with the PaymentMethod field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPaymentMethod
+
+`func (o *EmaopayOrder) SetPaymentMethod(v string)`
+
+SetPaymentMethod sets PaymentMethod field to given value.
+
+### HasPaymentMethod
+
+`func (o *EmaopayOrder) HasPaymentMethod() bool`
+
+HasPaymentMethod returns a boolean if a field has been set.
 
 ### GetProductId
 

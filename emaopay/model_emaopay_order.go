@@ -44,6 +44,8 @@ type EmaopayOrder struct {
 	NotifyURL *string `json:"notifyURL,omitempty"`
 	// 更新时间戳
 	PaidAt *int32 `json:"paidAt,omitempty"`
+	// 支付方式
+	PaymentMethod *string `json:"paymentMethod,omitempty"`
 	// 产品 Id, 可为空
 	ProductId *string `json:"productId,omitempty"`
 	// 二维码
@@ -494,6 +496,38 @@ func (o *EmaopayOrder) SetPaidAt(v int32) {
 	o.PaidAt = &v
 }
 
+// GetPaymentMethod returns the PaymentMethod field value if set, zero value otherwise.
+func (o *EmaopayOrder) GetPaymentMethod() string {
+	if o == nil || IsNil(o.PaymentMethod) {
+		var ret string
+		return ret
+	}
+	return *o.PaymentMethod
+}
+
+// GetPaymentMethodOk returns a tuple with the PaymentMethod field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *EmaopayOrder) GetPaymentMethodOk() (*string, bool) {
+	if o == nil || IsNil(o.PaymentMethod) {
+		return nil, false
+	}
+	return o.PaymentMethod, true
+}
+
+// HasPaymentMethod returns a boolean if a field has been set.
+func (o *EmaopayOrder) HasPaymentMethod() bool {
+	if o != nil && !IsNil(o.PaymentMethod) {
+		return true
+	}
+
+	return false
+}
+
+// SetPaymentMethod gets a reference to the given string and assigns it to the PaymentMethod field.
+func (o *EmaopayOrder) SetPaymentMethod(v string) {
+	o.PaymentMethod = &v
+}
+
 // GetProductId returns the ProductId field value if set, zero value otherwise.
 func (o *EmaopayOrder) GetProductId() string {
 	if o == nil || IsNil(o.ProductId) {
@@ -798,6 +832,9 @@ func (o EmaopayOrder) ToMap() (map[string]interface{}, error) {
 	}
 	if !IsNil(o.PaidAt) {
 		toSerialize["paidAt"] = o.PaidAt
+	}
+	if !IsNil(o.PaymentMethod) {
+		toSerialize["paymentMethod"] = o.PaymentMethod
 	}
 	if !IsNil(o.ProductId) {
 		toSerialize["productId"] = o.ProductId

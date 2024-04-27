@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **MerchantId** | Pointer to **string** | 商户 Id | [optional] 
 **MerchantTradeNo** | Pointer to **string** | 商户订单号, 对商户而言是唯一的 | [optional] 
 **NotifyURL** | Pointer to **string** | 回调地址 | [optional] 
+**PaymentMethod** | Pointer to **string** | 支付方式 | [optional] 
 **ProductId** | Pointer to **string** | 产品 Id | [optional] 
 **ReturnURL** | Pointer to **string** | 支付成功后的跳转地址 | [optional] 
 **Signature** | Pointer to **string** | 签名 | [optional] 
@@ -131,6 +132,31 @@ SetNotifyURL sets NotifyURL field to given value.
 `func (o *EmaopayCreateOrderParams) HasNotifyURL() bool`
 
 HasNotifyURL returns a boolean if a field has been set.
+
+### GetPaymentMethod
+
+`func (o *EmaopayCreateOrderParams) GetPaymentMethod() string`
+
+GetPaymentMethod returns the PaymentMethod field if non-nil, zero value otherwise.
+
+### GetPaymentMethodOk
+
+`func (o *EmaopayCreateOrderParams) GetPaymentMethodOk() (*string, bool)`
+
+GetPaymentMethodOk returns a tuple with the PaymentMethod field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetPaymentMethod
+
+`func (o *EmaopayCreateOrderParams) SetPaymentMethod(v string)`
+
+SetPaymentMethod sets PaymentMethod field to given value.
+
+### HasPaymentMethod
+
+`func (o *EmaopayCreateOrderParams) HasPaymentMethod() bool`
+
+HasPaymentMethod returns a boolean if a field has been set.
 
 ### GetProductId
 
