@@ -52,6 +52,8 @@ type EmaopayOrder struct {
 	RealAmount *string `json:"realAmount,omitempty"`
 	// 支付成功后的跳转地址
 	ReturnURL *string `json:"returnURL,omitempty"`
+	// 签名
+	Signature *string `json:"signature,omitempty"`
 	// 状态
 	Status *string `json:"status,omitempty"`
 	UpdatedAt *time.Time `json:"updatedAt,omitempty"`
@@ -620,6 +622,38 @@ func (o *EmaopayOrder) SetReturnURL(v string) {
 	o.ReturnURL = &v
 }
 
+// GetSignature returns the Signature field value if set, zero value otherwise.
+func (o *EmaopayOrder) GetSignature() string {
+	if o == nil || IsNil(o.Signature) {
+		var ret string
+		return ret
+	}
+	return *o.Signature
+}
+
+// GetSignatureOk returns a tuple with the Signature field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *EmaopayOrder) GetSignatureOk() (*string, bool) {
+	if o == nil || IsNil(o.Signature) {
+		return nil, false
+	}
+	return o.Signature, true
+}
+
+// HasSignature returns a boolean if a field has been set.
+func (o *EmaopayOrder) HasSignature() bool {
+	if o != nil && !IsNil(o.Signature) {
+		return true
+	}
+
+	return false
+}
+
+// SetSignature gets a reference to the given string and assigns it to the Signature field.
+func (o *EmaopayOrder) SetSignature(v string) {
+	o.Signature = &v
+}
+
 // GetStatus returns the Status field value if set, zero value otherwise.
 func (o *EmaopayOrder) GetStatus() string {
 	if o == nil || IsNil(o.Status) {
@@ -776,6 +810,9 @@ func (o EmaopayOrder) ToMap() (map[string]interface{}, error) {
 	}
 	if !IsNil(o.ReturnURL) {
 		toSerialize["returnURL"] = o.ReturnURL
+	}
+	if !IsNil(o.Signature) {
+		toSerialize["signature"] = o.Signature
 	}
 	if !IsNil(o.Status) {
 		toSerialize["status"] = o.Status

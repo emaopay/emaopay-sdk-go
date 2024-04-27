@@ -32,6 +32,8 @@ type EmaopayCreateOrderParams struct {
 	ProductId *string `json:"productId,omitempty"`
 	// 支付成功后的跳转地址
 	ReturnURL *string `json:"returnURL,omitempty"`
+	// 签名
+	Signature *string `json:"signature,omitempty"`
 	// 用户 Id, 可为空，如果是匿名用户，那么就为空
 	UserId *string `json:"userId,omitempty"`
 }
@@ -245,6 +247,38 @@ func (o *EmaopayCreateOrderParams) SetReturnURL(v string) {
 	o.ReturnURL = &v
 }
 
+// GetSignature returns the Signature field value if set, zero value otherwise.
+func (o *EmaopayCreateOrderParams) GetSignature() string {
+	if o == nil || IsNil(o.Signature) {
+		var ret string
+		return ret
+	}
+	return *o.Signature
+}
+
+// GetSignatureOk returns a tuple with the Signature field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *EmaopayCreateOrderParams) GetSignatureOk() (*string, bool) {
+	if o == nil || IsNil(o.Signature) {
+		return nil, false
+	}
+	return o.Signature, true
+}
+
+// HasSignature returns a boolean if a field has been set.
+func (o *EmaopayCreateOrderParams) HasSignature() bool {
+	if o != nil && !IsNil(o.Signature) {
+		return true
+	}
+
+	return false
+}
+
+// SetSignature gets a reference to the given string and assigns it to the Signature field.
+func (o *EmaopayCreateOrderParams) SetSignature(v string) {
+	o.Signature = &v
+}
+
 // GetUserId returns the UserId field value if set, zero value otherwise.
 func (o *EmaopayCreateOrderParams) GetUserId() string {
 	if o == nil || IsNil(o.UserId) {
@@ -304,6 +338,9 @@ func (o EmaopayCreateOrderParams) ToMap() (map[string]interface{}, error) {
 	}
 	if !IsNil(o.ReturnURL) {
 		toSerialize["returnURL"] = o.ReturnURL
+	}
+	if !IsNil(o.Signature) {
+		toSerialize["signature"] = o.Signature
 	}
 	if !IsNil(o.UserId) {
 		toSerialize["userId"] = o.UserId

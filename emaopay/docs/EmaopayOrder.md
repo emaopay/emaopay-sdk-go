@@ -21,6 +21,7 @@ Name | Type | Description | Notes
 **QrCode** | Pointer to **string** | 二维码 | [optional] 
 **RealAmount** | Pointer to **string** | 真实金额 | [optional] 
 **ReturnURL** | Pointer to **string** | 支付成功后的跳转地址 | [optional] 
+**Signature** | Pointer to **string** | 签名 | [optional] 
 **Status** | Pointer to **string** | 状态 | [optional] 
 **UpdatedAt** | Pointer to **time.Time** |  | [optional] 
 **UserId** | Pointer to **string** | 用户 Id, 可为空，如果是匿名用户，那么就为空 | [optional] 
@@ -468,6 +469,31 @@ SetReturnURL sets ReturnURL field to given value.
 `func (o *EmaopayOrder) HasReturnURL() bool`
 
 HasReturnURL returns a boolean if a field has been set.
+
+### GetSignature
+
+`func (o *EmaopayOrder) GetSignature() string`
+
+GetSignature returns the Signature field if non-nil, zero value otherwise.
+
+### GetSignatureOk
+
+`func (o *EmaopayOrder) GetSignatureOk() (*string, bool)`
+
+GetSignatureOk returns a tuple with the Signature field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetSignature
+
+`func (o *EmaopayOrder) SetSignature(v string)`
+
+SetSignature sets Signature field to given value.
+
+### HasSignature
+
+`func (o *EmaopayOrder) HasSignature() bool`
+
+HasSignature returns a boolean if a field has been set.
 
 ### GetStatus
 

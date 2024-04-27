@@ -760,6 +760,9 @@ components:
         returnURL:
           description: 支付成功后的跳转地址
           type: string
+        signature:
+          description: 签名
+          type: string
         userId:
           description: "用户 Id, 可为空，如果是匿名用户，那么就为空"
           type: string
@@ -902,6 +905,7 @@ components:
         merchantTradeNo: merchantTradeNo
         monitorId: monitorId
         productId: productId
+        signature: signature
         created: 0
         userId: userId
         realAmount: realAmount
@@ -969,6 +973,9 @@ components:
         returnURL:
           description: 支付成功后的跳转地址
           type: string
+        signature:
+          description: 签名
+          type: string
         status:
           description: 状态
           type: string
@@ -1009,6 +1016,7 @@ components:
           merchantTradeNo: merchantTradeNo
           monitorId: monitorId
           productId: productId
+          signature: signature
           created: 0
           userId: userId
           realAmount: realAmount
@@ -1029,6 +1037,7 @@ components:
           merchantTradeNo: merchantTradeNo
           monitorId: monitorId
           productId: productId
+          signature: signature
           created: 0
           userId: userId
           realAmount: realAmount
