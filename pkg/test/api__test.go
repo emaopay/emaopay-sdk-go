@@ -14,7 +14,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID/emaopaysdk"
+	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopaysdk"
 )
 
 func Test_emaopaysdk_DefaultApiService(t *testing.T) {
