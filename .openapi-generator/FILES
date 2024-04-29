@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 .travis.yml
 README.md
 api/openapi.yaml
@@ -51,5 +50,4 @@ model_emaopay_register_params.go
 model_emaopay_upload_credits.go
 model_emaopay_user.go
 response.go
-test/api__test.go
 utils.go
