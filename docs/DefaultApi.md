@@ -54,7 +54,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -120,7 +120,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -186,7 +186,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -252,7 +252,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -313,7 +313,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -379,7 +379,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -447,7 +447,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -513,7 +513,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -581,7 +581,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -645,7 +645,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -715,7 +715,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -785,7 +785,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -846,7 +846,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -916,7 +916,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -982,7 +982,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -1056,7 +1056,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -1130,7 +1130,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -1200,7 +1200,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -1261,7 +1261,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -1341,7 +1341,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -1407,7 +1407,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -1477,7 +1477,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -1543,7 +1543,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -1604,7 +1604,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -1670,7 +1670,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -1740,7 +1740,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -1808,7 +1808,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -1876,7 +1876,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -1940,7 +1940,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {
@@ -2012,7 +2012,7 @@ import (
 	"context"
 	"fmt"
 	"os"
-	openapiclient "github.com/emaopay/emaopay-sdk-go/emaopay"
+	openapiclient "github.com/emaopay/emaopay-sdk-go"
 )
 
 func main() {

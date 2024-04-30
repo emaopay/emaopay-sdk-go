@@ -28,6 +28,8 @@ docs/EmaopayRegisterParams.md
 docs/EmaopayUploadCredits.md
 docs/EmaopayUser.md
 git_push.sh
+go.mod
+go.sum
 model_emaopay_create_merchant_params.go
 model_emaopay_create_monitor_params.go
 model_emaopay_create_new_monitor_params.go
