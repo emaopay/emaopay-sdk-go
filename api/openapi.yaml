@@ -438,13 +438,6 @@ paths:
     post:
       description: 创建订单
       operationId: createOrder
-      parameters:
-      - description: 签名
-        in: header
-        name: X-Signature
-        required: true
-        schema:
-          type: string
       requestBody:
         content:
           application/json:

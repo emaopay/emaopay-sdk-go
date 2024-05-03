@@ -569,14 +569,7 @@ func (a *DefaultApiService) CreateNewMonitorExecute(r ApiCreateNewMonitorRequest
 type ApiCreateOrderRequest struct {
 	ctx context.Context
 	ApiService *DefaultApiService
-	xSignature *string
 	params *EmaopayCreateOrderParams
-}
-
-// 签名
-func (r ApiCreateOrderRequest) XSignature(xSignature string) ApiCreateOrderRequest {
-	r.xSignature = &xSignature
-	return r
 }
 
 // 订单
@@ -624,9 +617,6 @@ func (a *DefaultApiService) CreateOrderExecute(r ApiCreateOrderRequest) (*Emaopa
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}
 	localVarFormParams := url.Values{}
-	if r.xSignature == nil {
-		return localVarReturnValue, nil, reportError("xSignature is required and must be specified")
-	}
 	if r.params == nil {
 		return localVarReturnValue, nil, reportError("params is required and must be specified")
 	}
@@ -648,7 +638,6 @@ func (a *DefaultApiService) CreateOrderExecute(r ApiCreateOrderRequest) (*Emaopa
 	if localVarHTTPHeaderAccept != "" {
 		localVarHeaderParams["Accept"] = localVarHTTPHeaderAccept
 	}
-	parameterAddToHeaderOrQuery(localVarHeaderParams, "X-Signature", r.xSignature, "")
 	// body params
 	localVarPostBody = r.params
 	req, err := a.client.prepareRequest(r.ctx, localVarPath, localVarHTTPMethod, localVarPostBody, localVarHeaderParams, localVarQueryParams, localVarFormParams, formFiles)

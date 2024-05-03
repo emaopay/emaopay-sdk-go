@@ -364,7 +364,7 @@ No authorization required
 
 ## CreateOrder
 
-> EmaopayOrder CreateOrder(ctx).XSignature(xSignature).Params(params).Execute()
+> EmaopayOrder CreateOrder(ctx).Params(params).Execute()
 
 创建订单
 
@@ -383,12 +383,11 @@ import (
 )
 
 func main() {
-	xSignature := "xSignature_example" // string | 签名
 	params := *openapiclient.NewEmaopayCreateOrderParams() // EmaopayCreateOrderParams | 订单
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DefaultApi.CreateOrder(context.Background()).XSignature(xSignature).Params(params).Execute()
+	resp, r, err := apiClient.DefaultApi.CreateOrder(context.Background()).Params(params).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DefaultApi.CreateOrder``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -409,7 +408,6 @@ Other parameters are passed through a pointer to a apiCreateOrderRequest struct 
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **xSignature** | **string** | 签名 | 
  **params** | [**EmaopayCreateOrderParams**](EmaopayCreateOrderParams.md) | 订单 | 
 
 ### Return type
