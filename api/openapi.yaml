@@ -12,7 +12,7 @@ info:
   title: EmaoPay API
   version: "1.0"
 servers:
-- url: //emaopay.com/v2
+- url: //emaopay.com/
 paths:
   /api/merchants:
     get:
