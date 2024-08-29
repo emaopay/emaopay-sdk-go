@@ -812,6 +812,7 @@ components:
         createdAt: 2000-01-23T04:56:07.000+00:00
         deletedAt: 2000-01-23T04:56:07.000+00:00
         name: name
+        description: description
         id: id
         userId: userId
         key: key
@@ -822,6 +823,8 @@ components:
           type: string
         deletedAt:
           format: date-time
+          type: string
+        description:
           type: string
         id:
           type: string

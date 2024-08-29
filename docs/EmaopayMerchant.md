@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **CreatedAt** | Pointer to **time.Time** |  | [optional] 
 **DeletedAt** | Pointer to **time.Time** |  | [optional] 
+**Description** | Pointer to **string** |  | [optional] 
 **Id** | Pointer to **string** |  | [optional] 
 **Key** | Pointer to **string** |  | [optional] 
 **Name** | Pointer to **string** |  | [optional] 
@@ -80,6 +81,31 @@ SetDeletedAt sets DeletedAt field to given value.
 `func (o *EmaopayMerchant) HasDeletedAt() bool`
 
 HasDeletedAt returns a boolean if a field has been set.
+
+### GetDescription
+
+`func (o *EmaopayMerchant) GetDescription() string`
+
+GetDescription returns the Description field if non-nil, zero value otherwise.
+
+### GetDescriptionOk
+
+`func (o *EmaopayMerchant) GetDescriptionOk() (*string, bool)`
+
+GetDescriptionOk returns a tuple with the Description field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDescription
+
+`func (o *EmaopayMerchant) SetDescription(v string)`
+
+SetDescription sets Description field to given value.
+
+### HasDescription
+
+`func (o *EmaopayMerchant) HasDescription() bool`
+
+HasDescription returns a boolean if a field has been set.
 
 ### GetId
 

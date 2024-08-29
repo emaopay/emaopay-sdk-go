@@ -23,6 +23,7 @@ var _ MappedNullable = &EmaopayMerchant{}
 type EmaopayMerchant struct {
 	CreatedAt *time.Time `json:"createdAt,omitempty"`
 	DeletedAt *time.Time `json:"deletedAt,omitempty"`
+	Description *string `json:"description,omitempty"`
 	Id *string `json:"id,omitempty"`
 	Key *string `json:"key,omitempty"`
 	Name *string `json:"name,omitempty"`
@@ -109,6 +110,38 @@ func (o *EmaopayMerchant) HasDeletedAt() bool {
 // SetDeletedAt gets a reference to the given time.Time and assigns it to the DeletedAt field.
 func (o *EmaopayMerchant) SetDeletedAt(v time.Time) {
 	o.DeletedAt = &v
+}
+
+// GetDescription returns the Description field value if set, zero value otherwise.
+func (o *EmaopayMerchant) GetDescription() string {
+	if o == nil || IsNil(o.Description) {
+		var ret string
+		return ret
+	}
+	return *o.Description
+}
+
+// GetDescriptionOk returns a tuple with the Description field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *EmaopayMerchant) GetDescriptionOk() (*string, bool) {
+	if o == nil || IsNil(o.Description) {
+		return nil, false
+	}
+	return o.Description, true
+}
+
+// HasDescription returns a boolean if a field has been set.
+func (o *EmaopayMerchant) HasDescription() bool {
+	if o != nil && !IsNil(o.Description) {
+		return true
+	}
+
+	return false
+}
+
+// SetDescription gets a reference to the given string and assigns it to the Description field.
+func (o *EmaopayMerchant) SetDescription(v string) {
+	o.Description = &v
 }
 
 // GetId returns the Id field value if set, zero value otherwise.
@@ -286,6 +319,9 @@ func (o EmaopayMerchant) ToMap() (map[string]interface{}, error) {
 	}
 	if !IsNil(o.DeletedAt) {
 		toSerialize["deletedAt"] = o.DeletedAt
+	}
+	if !IsNil(o.Description) {
+		toSerialize["description"] = o.Description
 	}
 	if !IsNil(o.Id) {
 		toSerialize["id"] = o.Id
