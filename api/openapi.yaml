@@ -434,9 +434,7 @@ paths:
           content:
             application/json:
               schema:
-                items:
-                  $ref: '#/components/schemas/emaopay.PagedResponse-emaopay_Order'
-                type: array
+                $ref: '#/components/schemas/emaopay.PagedResponse-emaopay_Order'
           description: OK
       summary: 获取订单列表
       tags:

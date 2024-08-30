@@ -1244,7 +1244,7 @@ No authorization required
 
 ## GetPagedOrderList
 
-> []EmaopayPagedResponseEmaopayOrder GetPagedOrderList(ctx, status, merchantId, productId, searchKey).PageIndex(pageIndex).PageSize(pageSize).Execute()
+> EmaopayPagedResponseEmaopayOrder GetPagedOrderList(ctx, status, merchantId, productId, searchKey).PageIndex(pageIndex).PageSize(pageSize).Execute()
 
 获取订单列表
 
@@ -1277,7 +1277,7 @@ func main() {
 		fmt.Fprintf(os.Stderr, "Error when calling `DefaultApi.GetPagedOrderList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
 	}
-	// response from `GetPagedOrderList`: []EmaopayPagedResponseEmaopayOrder
+	// response from `GetPagedOrderList`: EmaopayPagedResponseEmaopayOrder
 	fmt.Fprintf(os.Stdout, "Response from `DefaultApi.GetPagedOrderList`: %v\n", resp)
 }
 ```
@@ -1309,7 +1309,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**[]EmaopayPagedResponseEmaopayOrder**](EmaopayPagedResponseEmaopayOrder.md)
+[**EmaopayPagedResponseEmaopayOrder**](EmaopayPagedResponseEmaopayOrder.md)
 
 ### Authorization
 

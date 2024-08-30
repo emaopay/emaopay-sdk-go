@@ -1973,7 +1973,7 @@ func (r ApiGetPagedOrderListRequest) PageSize(pageSize int32) ApiGetPagedOrderLi
 	return r
 }
 
-func (r ApiGetPagedOrderListRequest) Execute() ([]EmaopayPagedResponseEmaopayOrder, *http.Response, error) {
+func (r ApiGetPagedOrderListRequest) Execute() (*EmaopayPagedResponseEmaopayOrder, *http.Response, error) {
 	return r.ApiService.GetPagedOrderListExecute(r)
 }
 
@@ -2001,13 +2001,13 @@ func (a *DefaultApiService) GetPagedOrderList(ctx context.Context, status string
 }
 
 // Execute executes the request
-//  @return []EmaopayPagedResponseEmaopayOrder
-func (a *DefaultApiService) GetPagedOrderListExecute(r ApiGetPagedOrderListRequest) ([]EmaopayPagedResponseEmaopayOrder, *http.Response, error) {
+//  @return EmaopayPagedResponseEmaopayOrder
+func (a *DefaultApiService) GetPagedOrderListExecute(r ApiGetPagedOrderListRequest) (*EmaopayPagedResponseEmaopayOrder, *http.Response, error) {
 	var (
 		localVarHTTPMethod   = http.MethodGet
 		localVarPostBody     interface{}
 		formFiles            []formFile
-		localVarReturnValue  []EmaopayPagedResponseEmaopayOrder
+		localVarReturnValue  *EmaopayPagedResponseEmaopayOrder
 	)
 
 	localBasePath, err := a.client.cfg.ServerURLWithContext(r.ctx, "DefaultApiService.GetPagedOrderList")
