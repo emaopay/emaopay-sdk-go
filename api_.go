@@ -1956,6 +1956,7 @@ type ApiGetPagedOrderListRequest struct {
 	status string
 	merchantId string
 	productId string
+	searchKey string
 	pageIndex *int32
 	pageSize *int32
 }
@@ -1985,15 +1986,17 @@ GetPagedOrderList 获取订单列表
  @param status 订单状态
  @param merchantId 商户Id
  @param productId 产品Id
+ @param searchKey 搜索关键字
  @return ApiGetPagedOrderListRequest
 */
-func (a *DefaultApiService) GetPagedOrderList(ctx context.Context, status string, merchantId string, productId string) ApiGetPagedOrderListRequest {
+func (a *DefaultApiService) GetPagedOrderList(ctx context.Context, status string, merchantId string, productId string, searchKey string) ApiGetPagedOrderListRequest {
 	return ApiGetPagedOrderListRequest{
 		ApiService: a,
 		ctx: ctx,
 		status: status,
 		merchantId: merchantId,
 		productId: productId,
+		searchKey: searchKey,
 	}
 }
 
@@ -2016,6 +2019,7 @@ func (a *DefaultApiService) GetPagedOrderListExecute(r ApiGetPagedOrderListReque
 	localVarPath = strings.Replace(localVarPath, "{"+"status"+"}", url.PathEscape(parameterValueToString(r.status, "status")), -1)
 	localVarPath = strings.Replace(localVarPath, "{"+"merchantId"+"}", url.PathEscape(parameterValueToString(r.merchantId, "merchantId")), -1)
 	localVarPath = strings.Replace(localVarPath, "{"+"productId"+"}", url.PathEscape(parameterValueToString(r.productId, "productId")), -1)
+	localVarPath = strings.Replace(localVarPath, "{"+"searchKey"+"}", url.PathEscape(parameterValueToString(r.searchKey, "searchKey")), -1)
 
 	localVarHeaderParams := make(map[string]string)
 	localVarQueryParams := url.Values{}

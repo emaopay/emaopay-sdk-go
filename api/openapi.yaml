@@ -411,6 +411,12 @@ paths:
         required: true
         schema:
           type: string
+      - description: 搜索关键字
+        in: path
+        name: searchKey
+        required: true
+        schema:
+          type: string
       - description: 页码
         in: query
         name: pageIndex

@@ -1244,7 +1244,7 @@ No authorization required
 
 ## GetPagedOrderList
 
-> []EmaopayPagedResponseEmaopayOrder GetPagedOrderList(ctx, status, merchantId, productId).PageIndex(pageIndex).PageSize(pageSize).Execute()
+> []EmaopayPagedResponseEmaopayOrder GetPagedOrderList(ctx, status, merchantId, productId, searchKey).PageIndex(pageIndex).PageSize(pageSize).Execute()
 
 获取订单列表
 
@@ -1266,12 +1266,13 @@ func main() {
 	status := "status_example" // string | 订单状态
 	merchantId := "merchantId_example" // string | 商户Id
 	productId := "productId_example" // string | 产品Id
+	searchKey := "searchKey_example" // string | 搜索关键字
 	pageIndex := int32(56) // int32 | 页码
 	pageSize := int32(56) // int32 | 每页数量
 
 	configuration := openapiclient.NewConfiguration()
 	apiClient := openapiclient.NewAPIClient(configuration)
-	resp, r, err := apiClient.DefaultApi.GetPagedOrderList(context.Background(), status, merchantId, productId).PageIndex(pageIndex).PageSize(pageSize).Execute()
+	resp, r, err := apiClient.DefaultApi.GetPagedOrderList(context.Background(), status, merchantId, productId, searchKey).PageIndex(pageIndex).PageSize(pageSize).Execute()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error when calling `DefaultApi.GetPagedOrderList``: %v\n", err)
 		fmt.Fprintf(os.Stderr, "Full HTTP response: %v\n", r)
@@ -1290,6 +1291,7 @@ Name | Type | Description  | Notes
 **status** | **string** | 订单状态 | 
 **merchantId** | **string** | 商户Id | 
 **productId** | **string** | 产品Id | 
+**searchKey** | **string** | 搜索关键字 | 
 
 ### Other Parameters
 
@@ -1298,6 +1300,7 @@ Other parameters are passed through a pointer to a apiGetPagedOrderListRequest s
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+
 
 
 
